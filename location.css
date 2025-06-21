@@ -146,4 +146,11 @@ body {
     width: 3rem;
     height: 3rem;
   }
+} 
+#locationBtnX{
+    border: none; 
+    background-color: transparent; 
+    padding-bottom: 40px;
+    padding-right: 40px;
 }
+ 

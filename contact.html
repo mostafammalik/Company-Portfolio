@@ -39,6 +39,7 @@
     <link href="assets/css/main.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./whatsappCSS.css" />
+    <link rel="stylesheet" href="./location.css" />
     <!-- =======================================================
   * Template Name: MyPortfolio
   * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
@@ -121,17 +122,20 @@
         >
           <div class="row gy-4">
             <div class="col-lg-5">
-              <div
-                class="info-item d-flex"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Gaddah - KSA - A001 Street</p>
+              <button id="locationBtnX">
+                <div
+                  class="info-item d-flex"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+
+                    <p>Gaddah - KSA - A001 Street</p>
+                  </div>
                 </div>
-              </div>
+              </button>
               <!-- End Info Item -->
 
               <div
@@ -242,23 +246,11 @@
     <div class="map"></div>
 
     <!-- Floating Location Button -->
-    <div class="float-btn-container">
-      <button
-        class="location-btn"
-        id="locationBtn"
-        aria-label="Open location in maps"
-        class="locationBtn"
-      >
-        <span class="badge">1</span>
-        <i class="bi bi-geo-alt flex-shrink-0"></i>
-        <span class="tooltip">View our location</span>
-      </button>
-      <button class="btn-location"></button>
-    </div>
+  
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const locationBtn = document.getElementById("locationBtnKSA");
+        const locationBtn = document.getElementById("locationBtnX");
 
         // Set your fixed location coordinates here (e.g., Times Square)
         const fixedLocation = {
@@ -322,6 +314,7 @@
         }, 5000);
       });
     </script>
+
     <footer id="footer" class="footer light-background">
       <div class="container">
         <div class="copyright text-center">
